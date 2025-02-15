@@ -10,8 +10,7 @@
         "tutorial-info-cache.json",
         "test.md",
         "no_code_pre.md",
-        "no_code.md",
-        "_locales/ru/test.md"
+        "no_code.md"
     ],
     "targetVersions": {
         "target": "2.0.30",
