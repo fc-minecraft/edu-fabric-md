@@ -5,7 +5,19 @@ namespace myCustomBlocks {
      */
     //% block="количество какао больше 10"
     export function checkCocoa(): boolean {
-        const cocoaCount = blocks.count(Block.Cocoa);
+        let cocoaCount = 0;
+
+        // Проверяем количество блоков какао в области 10x10x10 вокруг игрока
+        for (let x = -5; x <= 5; x++) {
+            for (let y = -5; y <= 5; y++) {
+                for (let z = -5; z <= 5; z++) {
+                    if (blocks.testForBlock(Block.Cocoa, positions.create(x, y, z))) {
+                        cocoaCount++;
+                    }
+                }
+            }
+        }
+
         return cocoaCount > 10;
     }
 
@@ -14,8 +26,7 @@ namespace myCustomBlocks {
      */
     //% block="стоп"
     export function stopBlock(): void {
-        game.say("Вы достигли блока 'стоп'. Попробуйте еще раз.");
-        // Дополнительные действия при остановке
+        player.say("Вы достигли условия 'какао больше 10'. Код завершен.");
     }
 
     /**
@@ -24,13 +35,9 @@ namespace myCustomBlocks {
     //% block="проверить последовательность"
     export function checkSequence(): void {
         if (checkCocoa()) {
-            game.say("Количество какао больше 10! Вы можете продолжить.");
-            // Логика для продолжения
-            // Например, открыть дверь или переместить игрока
-            blocks.fill(Block.Air, world(0, 0, 0), world(1, 1, 1), FillOperation.Replace);
-        } else {
-            game.say("Количество какао недостаточно. Попробуйте еще раз.");
             stopBlock();
+        } else {
+            player.say("Какао недостаточно. Продолжайте собирать.");
         }
     }
 }
