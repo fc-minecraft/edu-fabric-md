@@ -8,17 +8,20 @@
 Соберите блоки в правильной последовательности, чтобы пройти дальше.
 
 #### ~ tutorialhint
-Используйте блоки "количество какао больше 10" и "стоп", чтобы проверить условие и продолжить.
+Используйте блоки **"проверить <предмет> <знак> <количество>"** и **"прекратить подачу"**, чтобы проверить условие и продолжить.
 
 ```ghost
-myCustomBlocks.checkCocoa()
-myCustomBlocks.stopBlock()
+if (myCustomBlocks.checkBlockCount(Block.Cocoa, ">=", 10)) {
+    myCustomBlocks.stopBlock(Block.Cocoa, ">=", 10);
+}
+```
 
-myCustomBlocks.checkSequence()
-```
 ```template
-{}
+if (myCustomBlocks.checkBlockCount( , , )) {
+    myCustomBlocks.stopBlock( , , );
+}
 ```
+
 ```package
-minecraft-hoc22=github:fc-minecraft/edu-fabric-ts
+minecraft-hoc22=github:fc-minecraft/edu-fabric-ts#v0.0.7
 ```
