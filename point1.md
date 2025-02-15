@@ -20,5 +20,5 @@ myCustomBlocks.checkSequence()
 {}
 ```
 ```package
-my-custom-blocks=./
+minecraft-hoc22=github:fc-minecraft/edu-fabric-ts
 ```
