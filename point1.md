@@ -20,5 +20,5 @@ myCustomBlocks.checkSequence()
 {}
 ```
 ```package
-my-custom-blocks=./behavior
+my-custom-blocks=./
 ```
