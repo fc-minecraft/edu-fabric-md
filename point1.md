@@ -26,5 +26,5 @@ if (myCustomBlocks.getItemCount(Item.CocoaBeans) >= 10) {
 ```
 
 ```package
-minecraft-hoc22=github:fc-minecraft/edu-fabric-ts#v0.0.22
+minecraft-hoc22=github:fc-minecraft/edu-fabric-ts#v0.0.23
 ```
