@@ -10,11 +10,8 @@
 #### ~ tutorialhint
 Используйте блоки **"проверить <предмет> <знак> <количество>"** и **"прекратить подачу"**, чтобы проверить условие и продолжить.
 
-```hidden
-myCustomBlocks.setExpectedValues(Item.CocoaBeans, 10);
-player.say("Expected values set!");
-```
 ```ghost
+myCustomBlocks.setExpectedValues(Item.CocoaBeans, 10);
 if (myCustomBlocks.getItemCount(Item.CocoaBeans, myCustomBlocks.ComparisonOperator.LessOrEqual, 10)) {
     myCustomBlocks.stopBlock();
 }
