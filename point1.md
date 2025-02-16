@@ -5,13 +5,12 @@
 # Check Cocoa and Stop
 
 ## Step 1
-Соберите блоки в правильной последовательности, чтобы пройти дальше.
+Собери блоки в правильной последовательности, чтобы пройти дальше.
 
 #### ~ tutorialhint
-Используйте блоки **"проверить <предмет> <знак> <количество>"** и **"прекратить подачу"**, чтобы проверить условие и продолжить.
+Используй блоки **"проверить <предмет> <знак> <количество>"** и **"прекратить подачу"**, чтобы проверить условие и продолжить.
 
 ```ghost
-myCustomBlocks.setExpectedValues(Item.CocoaBeans, 10);
 if (myCustomBlocks.getItemCount(Item.CocoaBeans, myCustomBlocks.ComparisonOperator.LessOrEqual, 10)) {
     myCustomBlocks.stopBlock();
 }
@@ -24,5 +23,5 @@ if (myCustomBlocks.getItemCount(Item.CocoaBeans, myCustomBlocks.ComparisonOperat
 ```
 
 ```package
-minecraft-hoc22=github:fc-minecraft/edu-fabric-ts#v0.0.36
+minecraft-hoc22=github:fc-minecraft/edu-fabric-ts#v0.0.37
 ```
