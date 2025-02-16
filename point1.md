@@ -10,18 +10,21 @@
 #### ~ tutorialhint
 Используйте блоки **"проверить <предмет> <знак> <количество>"** и **"прекратить подачу"**, чтобы проверить условие и продолжить.
 
+```hidden
+myCustomBlocks.setExpectedValues(Item.CocoaBeans, 10);
+```
 ```ghost
-if (myCustomBlocks.checkBlockCount(Block.Cocoa, ">=", 10)) {
-    myCustomBlocks.stopBlock(Block.Cocoa, ">=", 10);
+if (myCustomBlocks.getItemCount(Item.CocoaBeans) >= 10) {
+    myCustomBlocks.stopBlock();
 }
 ```
 
 ```template
-if (myCustomBlocks.checkBlockCount( , , )) {
-    myCustomBlocks.stopBlock( , , );
+if (myCustomBlocks.getItemCount(Item.CocoaBeans) >= 10) {
+    myCustomBlocks.stopBlock();
 }
 ```
 
 ```package
-minecraft-hoc22=github:fc-minecraft/edu-fabric-ts#v0.0.7
+minecraft-hoc22=github:fc-minecraft/edu-fabric-ts#v0.0.22
 ```
