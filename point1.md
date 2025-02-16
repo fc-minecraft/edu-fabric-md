@@ -14,17 +14,17 @@
 myCustomBlocks.setExpectedValues(Item.CocoaBeans, 10);
 ```
 ```ghost
-if (myCustomBlocks.getItemCount(Item.CocoaBeans) >= 10) {
+if (myCustomBlocks.getItemCount(Item.CocoaBeans, myCustomBlocks.ComparisonOperator.LessOrEqual, 10)) {
     myCustomBlocks.stopBlock();
 }
 ```
 
 ```template
-if (myCustomBlocks.getItemCount(Item.CocoaBeans) >= 10) {
+if (myCustomBlocks.getItemCount(Item.CocoaBeans, myCustomBlocks.ComparisonOperator.LessOrEqual, 10)) {
     myCustomBlocks.stopBlock();
 }
 ```
 
 ```package
-minecraft-hoc22=github:fc-minecraft/edu-fabric-ts#v0.0.23
+minecraft-hoc22=github:fc-minecraft/edu-fabric-ts#v0.0.36
 ```
