@@ -23,5 +23,5 @@ if (myCustomBlocks.getItemCount(Item.CocoaBeans, myCustomBlocks.ComparisonOperat
 ```
 
 ```package
-minecraft-hoc22=github:fc-minecraft/edu-fabric-ts#v0.0.37
+minecraft-hoc22=github:fc-minecraft/edu-fabric-ts#v0.0.38
 ```
