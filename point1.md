@@ -12,6 +12,7 @@
 
 ```hidden
 myCustomBlocks.setExpectedValues(Item.CocoaBeans, 10);
+player.say("Expected values set!");
 ```
 ```ghost
 if (myCustomBlocks.getItemCount(Item.CocoaBeans, myCustomBlocks.ComparisonOperator.LessOrEqual, 10)) {
